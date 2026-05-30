@@ -1,0 +1,114 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px 16px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.imageWrapper {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.image {
+  width: 96px;
+  height: 96px;
+  image-rendering: pixelated;
+}
+
+.id {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.types {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.typeBadge {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+/* Pokemon type colors */
+.normal    { background: #a8a878; }
+.fire      { background: #f08030; }
+.water     { background: #6890f0; }
+.electric  { background: #f8d030; color: #333; }
+.grass     { background: #78c850; }
+.ice       { background: #98d8d8; color: #333; }
+.fighting  { background: #c03028; }
+.poison    { background: #a040a0; }
+.ground    { background: #e0c068; color: #333; }
+.flying    { background: #a890f0; }
+.psychic   { background: #f85888; }
+.bug       { background: #a8b820; }
+.rock      { background: #b8a038; }
+.ghost     { background: #705898; }
+.dragon    { background: #7038f8; }
+.dark      { background: #705848; }
+.steel     { background: #b8b8d0; color: #333; }
+.fairy     { background: #ee99ac; }
+
+.stats {
+  width: 100%;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.statLabel {
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.statValue {
+  font-weight: 700;
+  color: var(--text-primary);
+}
