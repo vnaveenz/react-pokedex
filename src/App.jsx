@@ -13,7 +13,7 @@ import './App.css';
  *   5. Array methods - .filter() and .map() for transforming data
  */
 
-const POKEMON_COUNT = 4500; // how many Pokemon to load
+const POKEMON_COUNT = 4700; // how many Pokemon to load
 const API_BASE = 'https://pokeapi.co/api/v2';
 
 function App() {
